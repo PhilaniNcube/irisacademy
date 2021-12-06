@@ -6,7 +6,8 @@ const AboutSection = () => {
       <section className="grid grid-cols-1 md:grid-cols-2 py-6 max-w-7xl mx-auto  text-navy">
         <div className="w-full px-4 md:border-r-2 border-brown">
           <h2 className="font-extrabold  text-2xl">ABOUT US</h2>
-          <p className="leading-6 mt-4 text-xl font-medium">
+          <hr className="bg-navy h-1 text-navy"></hr>
+          <p className="leading-7 mt-4 tracking-wide text-md font-light">
             Bathulile Mdabula aged 33 years of age is the Director of IRIS
             ACADEMY. She founded the business in 2016 where she began tutoring
             to her siblings and neighbours kids, that when the passion grew. She
