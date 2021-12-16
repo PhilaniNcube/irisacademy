@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import { Fragment } from 'react';
 import AboutSection from '../components/Home/About/AboutSection';
+import NewAbout from '../components/Home/About/NewAbout';
 import Contact from '../components/Home/Contact/Contact';
 import Hero from '../components/Home/Hero';
 import Packages from '../components/Home/Packages/Packages';
@@ -15,7 +16,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero />
-      <AboutSection />
+      <NewAbout />
       <Why />
       <Services />
       <Packages />
