@@ -9,7 +9,7 @@ const Packages = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         <div className="bg-lightBrown rounded text-navy flex flex-col space-y-4 items-center justify-around px-3 py-4">
           <h3 className="font-extrabold text-lg">Package 1</h3>
-          <h4 className="font-light text-xl">R999/mo</h4>
+
           <p className="font-medium">
             Full descriptionEquiscient velignat magnatur, core re lia
             nectaquatio. Nam, conem comnien dictiis prat molorem sitis ma
@@ -23,7 +23,7 @@ const Packages = () => {
         </div>
         <div className="bg-lightBrown rounded text-navy flex flex-col space-y-4 items-center justify-around px-3 py-4">
           <h3 className="font-extrabold text-lg">Package 2</h3>
-          <h4 className="font-light text-xl">R1,999/mo</h4>
+
           <p className="font-medium">
             Full descriptionEquiscient velignat magnatur, core re lia
             nectaquatio. Nam, conem comnien dictiis prat molorem sitis ma
@@ -37,7 +37,7 @@ const Packages = () => {
         </div>
         <div className="bg-lightBrown rounded text-navy flex flex-col space-y-4 items-center justify-around px-3 py-4">
           <h3 className="font-extrabold text-lg">Package 3</h3>
-          <h4 className="font-light text-xl">R2,999/mo</h4>
+
           <p className="font-medium">
             Full descriptionEquiscient velignat magnatur, core re lia
             nectaquatio. Nam, conem comnien dictiis prat molorem sitis ma
@@ -51,7 +51,7 @@ const Packages = () => {
         </div>
         <div className="bg-lightBrown rounded text-navy flex flex-col space-y-4 items-center justify-around px-3 py-4">
           <h3 className="font-extrabold text-lg">Package 4</h3>
-          <h4 className="font-light text-xl">R3,999/mo</h4>
+
           <p className="font-medium">
             Full descriptionEquiscient velignat magnatur, core re lia
             nectaquatio. Nam, conem comnien dictiis prat molorem sitis ma
