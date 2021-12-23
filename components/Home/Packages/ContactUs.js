@@ -2,7 +2,10 @@ import React from 'react';
 
 const ContactUs = () => {
   return (
-    <section className="max-w-7xl mx-auto px-4 md:px-0 py-6" id="packages">
+    <section
+      className="max-w-7xl mx-auto px-4 md:px-0 py-12 flex flex-col items-center"
+      id="packages"
+    >
       <h2 className=" text-4xl text-center font-light text-navy mb-4">
         For Pricing on{' '}
         <span className="font-extrabold"> Tutoring Packages</span>
