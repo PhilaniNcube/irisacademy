@@ -11,7 +11,7 @@ const ContactUs = () => {
         <span className="font-extrabold"> Tutoring Packages</span>
       </h2>
 
-      <button className="rounded-full w-2/6 bg-navy text-white text-lg py-2 px-3 text-center">
+      <button className="rounded-full  bg-navy text-white text-lg py-2 px-6 text-center">
         Contact Us
       </button>
     </section>
