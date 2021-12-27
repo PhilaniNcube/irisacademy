@@ -14,7 +14,22 @@ export default function Home() {
     <Fragment>
       <Head>
         <title>Leonorah Iris Academy</title>
-        <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="description"
+          content="Leonorah Iris Academy for your tutoring of Mathematics and
+            Accounting"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="keywords"
+          content="Mathematics tutoring, tutoring, accounting, accounts, tutor, accounting tutor, maths tutor"
+        />
+        <meta property="og:locale" content="en_ZA" />
+        <meta property="og:site_name" content="Leonorah Iris Academy" />
+        <meta
+          property="og:image"
+          content="https://www.leonorahirisacademy.co.za/images/logo.png"
+        />
       </Head>
       <Hero />
       <NewAbout />
