@@ -1,15 +1,18 @@
+import { gql } from '@apollo/client';
 import Head from 'next/head';
 import { Fragment } from 'react';
+import client from '../apolloClient';
 import AboutSection from '../components/Home/About/AboutSection';
 import NewAbout from '../components/Home/About/NewAbout';
 import Contact from '../components/Home/Contact/Contact';
 import Hero from '../components/Home/Hero';
 import ContactUs from '../components/Home/Packages/ContactUs';
 import Packages from '../components/Home/Packages/Packages';
+import ResourceList from '../components/Home/Resources/ResourceList';
 import Services from '../components/Home/Services/Services';
 import Why from '../components/Home/Why/Why';
 
-export default function Home() {
+export default function Home({ resources }) {
   return (
     <Fragment>
       <Head>
@@ -36,7 +39,36 @@ export default function Home() {
       <Why />
       <Services />
       <ContactUs />
+      <ResourceList resources={resources} />
       <Contact />
     </Fragment>
   );
+}
+
+export async function getStaticProps() {
+  const { data } = await client.query({
+    query: gql`
+      query {
+        resources {
+          name
+          id
+          publishedAt
+          document {
+            id
+            fileName
+            url
+          }
+        }
+      }
+    `,
+  });
+
+  const { resources } = data;
+
+  return {
+    props: {
+      resources,
+      revalidate: 30,
+    },
+  };
 }
