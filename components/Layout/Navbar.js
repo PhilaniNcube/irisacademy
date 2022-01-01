@@ -7,8 +7,8 @@ const navigation = [
   { name: 'Services', href: '#services', current: false },
   { name: 'Why Us', href: '#whyus', current: false },
   { name: 'Packages', href: '#packages', current: false },
-  { name: 'Free Tools', href: '#freetools', current: false },
-  { name: 'FAQ', href: '#faq', current: false },
+  { name: 'Free Tools', href: '#tools', current: false },
+
   { name: 'Contact Us', href: '#contact', current: false },
 ];
 
