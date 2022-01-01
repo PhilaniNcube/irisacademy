@@ -1,6 +1,7 @@
 import { Fragment } from 'react';
 import { Disclosure, Menu, Transition } from '@headlessui/react';
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline';
+import Link from 'next/link';
 
 const navigation = [
   { name: 'Home', href: '/', current: false },
@@ -77,17 +78,19 @@ export default function Navbar() {
                 </div>
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                <button
-                  type="button"
-                  className="bg-navy text-xs md:text-sm px-1 md:px-4 py-1 font-semibold rounded-full flex items-center justify-between space-x-2 text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
-                >
-                  <span className="">Book Now</span>
-                  <img
-                    src="/images/icons/whatsapp.svg"
-                    className="h-6 w-6 text-white"
-                    aria-hidden="true"
-                  />
-                </button>
+                <Link href="https://wa.me/27815407709">
+                  <button
+                    type="button"
+                    className="bg-navy text-xs md:text-sm px-1 md:px-4 py-1 font-semibold rounded-full flex items-center justify-between space-x-2 text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                  >
+                    <span className="">Book Now</span>
+                    <img
+                      src="/images/icons/whatsapp.svg"
+                      className="h-6 w-6 text-white"
+                      aria-hidden="true"
+                    />
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
